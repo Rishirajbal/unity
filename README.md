@@ -9,6 +9,7 @@ A professional, sleek, and modern web page for downloading the Box Game. This br
 - `VERCEL_DEPLOYMENT_STEPS.md` - Step-by-step guide for Vercel deployment
 - `VERCEL_DEPLOYMENT_GUIDE.md` - Comprehensive guide for Vercel deployment
 - `VERCEL_CLI_DEPLOYMENT.md` - Guide for deploying using Vercel CLI
+- `VERCEL_GITHUB_DEPLOYMENT.md` - Guide for deploying using GitHub integration
 - `GAME_DOWNLOAD_GUIDE.md` - Comprehensive guide for downloading and playing the game
 - `BRANCH_INFO.md` - Information about all branches in this repository
 
@@ -54,6 +55,7 @@ For comprehensive deployment instructions, please see:
 - [VERCEL_DEPLOYMENT_STEPS.md](VERCEL_DEPLOYMENT_STEPS.md) - Step-by-step guide for Vercel deployment
 - [VERCEL_DEPLOYMENT_GUIDE.md](VERCEL_DEPLOYMENT_GUIDE.md) - Comprehensive guide for Vercel deployment
 - [VERCEL_CLI_DEPLOYMENT.md](VERCEL_CLI_DEPLOYMENT.md) - Guide for deploying using Vercel CLI
+- [VERCEL_GITHUB_DEPLOYMENT.md](VERCEL_GITHUB_DEPLOYMENT.md) - Guide for deploying using GitHub integration
 
 ## Other Branches
 
