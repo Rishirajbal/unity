@@ -6,9 +6,21 @@ A professional, sleek, and modern web page for downloading the Box Game. This br
 
 - `game-download-page/` - Contains the complete website for downloading the game
 - `box game_full_zip.zip` - The original game files
-- `VERCEL_DEPLOYMENT.md` - Quick guide for Vercel deployment
-- `VERCEL_DEPLOYMENT_GUIDE.md` - Comprehensive guide for Vercel deployment
+- `VERCEL_DEPLOYMENT_STEPS.md` - Step-by-step guide for Vercel deployment
+- `GAME_DOWNLOAD_GUIDE.md` - Comprehensive guide for downloading and playing the game
 - `BRANCH_INFO.md` - Information about all branches in this repository
+
+## Game Download and Installation
+
+For detailed instructions on downloading and playing the game, please see:
+- [GAME_DOWNLOAD_GUIDE.md](GAME_DOWNLOAD_GUIDE.md)
+
+### Quick Download Steps
+
+1. Visit the game download website
+2. Click the "Download Now" button
+3. Extract the zip file
+4. Run the game executable
 
 ## Game Controls
 
@@ -37,9 +49,7 @@ A professional, sleek, and modern web page for downloading the Box Game. This br
 ### Detailed Deployment Instructions
 
 For comprehensive deployment instructions, please see:
-- [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) - Quick Vercel deployment guide
-- [VERCEL_DEPLOYMENT_GUIDE.md](VERCEL_DEPLOYMENT_GUIDE.md) - Comprehensive Vercel guide
-- [game-download-page/DEPLOYMENT.md](game-download-page/DEPLOYMENT.md) - Technical deployment details
+- [VERCEL_DEPLOYMENT_STEPS.md](VERCEL_DEPLOYMENT_STEPS.md) - Step-by-step guide for Vercel deployment
 
 ## Other Branches
 
