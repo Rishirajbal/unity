@@ -1,41 +1,52 @@
-# Box Game - Mobile App
+# Box Game Mobile App
 
-A Flutter mobile version of the Box Game, ported from the original Unity version.
+A professional, sleek, and modern mobile application version of the Box Game built with Flutter. This repository contains the complete source code for the mobile game.
 
 ## Features
 
-- Fast-paced arcade gameplay
-- Simple touch controls
-- Customizable settings
-- High score tracking
-- Modern UI design
+- Smooth gameplay experience on mobile devices
+- Intuitive touch controls
+- Multiple difficulty levels
+- Score tracking and high score system
+- Responsive design that works on all mobile screen sizes
+- Clean, modern UI with animations
 
-## Screenshots
+## Project Structure
 
-![Game Screenshot](assets/images/game-screenshot.png)
+- `lib/` - Source code for the game
+  - `main.dart` - Entry point of the application
+  - `screens/` - UI screens (home, game, settings)
+  - `models/` - Game entities and data structures
+- `assets/` - Game assets and resources
+- `android/` - Android-specific configuration
+- `ios/` - iOS-specific configuration
+- `pubspec.yaml` - Flutter dependencies and configuration
 
-## Getting Started
+## Game Controls
+
+- Tap left side of screen for left movement
+- Tap right side of screen for right movement
+- Tap center of screen for stopping
+
+## Installation Instructions
 
 ### Prerequisites
 
-To build and run this Flutter application, you need to have the following installed:
+- Flutter SDK (version 2.0 or higher)
+- Android Studio or Xcode (depending on target platform)
+- Git
 
-1. **Flutter SDK**: Follow the [official installation guide](https://flutter.dev/docs/get-started/install)
-2. **Android Studio** or **Xcode** (for iOS development)
-3. **Git** for version control
+### Setup and Installation
 
-### Installation
-
-1. Clone the repository:
+1. Clone this repository:
    ```bash
    git clone https://github.com/Rishirajbal/unity.git
    cd unity
-   git checkout mobile-app-new
-   cd mobile_app_flutter
    ```
 
-2. Install dependencies:
+2. Install Flutter dependencies:
    ```bash
+   cd mobile_app_flutter
    flutter pub get
    ```
 
@@ -44,80 +55,56 @@ To build and run this Flutter application, you need to have the following instal
    flutter run
    ```
 
-## Building for Release
+### Building for Release
 
-### Android
+#### Android
 
-1. Generate a keystore file (if you don't have one):
-   ```bash
-   keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
-   ```
+```bash
+flutter build apk --release
+```
 
-2. Create a file `android/key.properties` with your keystore information:
-   ```
-   storePassword=<password>
-   keyPassword=<password>
-   keyAlias=key
-   storeFile=<path to keystore file>
-   ```
+The APK file will be available at `build/app/outputs/flutter-apk/app-release.apk`
 
-3. Build the APK:
-   ```bash
-   flutter build apk --release
-   ```
-   
-   The APK will be located at `build/app/outputs/flutter-apk/app-release.apk`
+#### iOS
 
-4. Install on your device:
-   ```bash
-   adb install build/app/outputs/flutter-apk/app-release.apk
-   ```
+```bash
+flutter build ios --release
+```
 
-### iOS
-
-1. Open the iOS project in Xcode:
-   ```bash
-   open ios/Runner.xcworkspace
-   ```
-
-2. Configure signing in Xcode with your Apple Developer account
-
-3. Build the app:
-   ```bash
-   flutter build ios --release
-   ```
-
-4. Archive and upload to App Store using Xcode
-
-## Game Controls
-
-- **Swipe Left**: Move the player box left
-- **Swipe Right**: Move the player box right
-- **Tap**: Stop the player box's movement
+Then use Xcode to archive and distribute the app.
 
 ## Development
 
-This project uses the Flame game engine for Flutter. The main components are:
+The app is structured as follows:
 
-- `lib/main.dart`: Entry point of the application
-- `lib/screens/`: UI screens (home, game, settings)
-- `lib/game/`: Game engine and logic
-- `lib/models/`: Game entities (player, obstacles)
+- `main.dart`: Application entry point and theme configuration
+- `screens/home_screen.dart`: Main menu and game options
+- `screens/game_screen.dart`: Main gameplay screen
+- `screens/settings_screen.dart`: Game settings and preferences
 
-## Contributing
+To contribute to the development:
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## Troubleshooting
+
+If you encounter any issues:
+
+- Make sure Flutter is up to date: `flutter upgrade`
+- Clean the build: `flutter clean`
+- Reinstall dependencies: `flutter pub get`
+- Check the Flutter doctor: `flutter doctor`
+
+For more detailed installation instructions, see the [INSTALLATION_GUIDE.md](../INSTALLATION_GUIDE.md) in the root directory.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
 
 ## Acknowledgements
 
 - Original Box Game created in Unity
 - [Flutter](https://flutter.dev/) for the app framework
-- [Flame](https://flame-engine.org/) for the game engine

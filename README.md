@@ -1,68 +1,85 @@
-# Box Game Download Page
+# Box Game Mobile App
 
-A professional, sleek, and modern web page for downloading the Box Game. This repository contains both the game files and a professionally designed website for game distribution.
+A professional, sleek, and modern mobile application version of the Box Game built with Flutter. This repository contains the complete source code for the mobile game.
 
 ## Repository Structure
 
-- `game-download-page/` - Contains the complete website for downloading the game
-- `box game_full_zip.zip` - The original game files
-- `box-game-download-page.zip` - A packaged version of the download website
-- `.github/workflows/` - GitHub Actions workflow for automated Vercel deployment
-- `COMPLETE_DEPLOYMENT_GUIDE.md` - Comprehensive guide for deploying the website
-- `VERCEL_DEPLOYMENT.md` - Quick guide for Vercel deployment
+- `mobile_app_flutter/` - Contains the complete Flutter mobile application
+  - `lib/` - Source code for the game
+  - `assets/` - Game assets and resources
+  - `android/` - Android-specific configuration
+  - `ios/` - iOS-specific configuration
+  - `pubspec.yaml` - Flutter dependencies and configuration
+
+## Game Features
+
+- Smooth gameplay experience on mobile devices
+- Intuitive touch controls
+- Multiple difficulty levels
+- Score tracking and high score system
+- Responsive design that works on all mobile screen sizes
+- Clean, modern UI with animations
 
 ## Game Controls
 
-- "A" for left movement
-- "D" for right movement
-- "W" for stopping
+- Tap left side of screen for left movement
+- Tap right side of screen for right movement
+- Tap center of screen for stopping
 
-## Website Features
+## Installation Instructions
 
-- Professional, sleek, and modern design
-- Responsive layout that works on all devices
-- Easy game download functionality
-- Game information and instructions
-- Animated UI elements for better user experience
+### Prerequisites
 
-## Deployment Options
+- Flutter SDK (version 2.0 or higher)
+- Android Studio or Xcode (depending on target platform)
+- Git
 
-### GitHub Pages (Recommended)
+### Setup and Installation
 
-This repository is configured to automatically deploy to GitHub Pages. Once enabled in your repository settings, the website will be available at:
-https://rishirajbal.github.io/unity/
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Rishirajbal/unity.git
+   cd unity
+   ```
 
-For detailed instructions, see:
-- [GITHUB_PAGES_DEPLOYMENT.md](GITHUB_PAGES_DEPLOYMENT.md) - GitHub Pages deployment guide
+2. Install Flutter dependencies:
+   ```bash
+   cd mobile_app_flutter
+   flutter pub get
+   ```
 
-### Deploy to Vercel
+3. Run the app in debug mode:
+   ```bash
+   flutter run
+   ```
 
-1. Go to [Vercel](https://vercel.com/) and sign up/login
-2. Import this GitHub repository
-3. Set the root directory to `game-download-page`
-4. Deploy!
+### Building for Release
 
-For manual Vercel deployment, see:
-- [MANUAL_VERCEL_DEPLOYMENT.md](MANUAL_VERCEL_DEPLOYMENT.md) - Step-by-step Vercel guide
-
-### Detailed Deployment Instructions
-
-For comprehensive deployment instructions, please see:
-- [COMPLETE_DEPLOYMENT_GUIDE.md](COMPLETE_DEPLOYMENT_GUIDE.md) - Comprehensive guide
-- [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) - Quick Vercel deployment guide
-- [game-download-page/DEPLOYMENT.md](game-download-page/DEPLOYMENT.md) - Technical deployment details
-
-## Local Development
-
-To run the website locally:
+#### Android
 
 ```bash
-cd game-download-page
-python -m http.server 8000
+flutter build apk --release
 ```
 
-Then visit `http://localhost:8000` in your browser.
+The APK file will be available at `build/app/outputs/flutter-apk/app-release.apk`
+
+#### iOS
+
+```bash
+flutter build ios --release
+```
+
+Then use Xcode to archive and distribute the app.
+
+## Development
+
+To contribute to the development of the Box Game Mobile App:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
 ## Game Preview
 
-<img width="960" alt="game" src="https://github.com/user-attachments/assets/1f6d6b22-cef1-4ae2-9307-d8bd0718908a" />
+<img width="300" alt="mobile game" src="https://github.com/user-attachments/assets/1f6d6b22-cef1-4ae2-9307-d8bd0718908a" />
