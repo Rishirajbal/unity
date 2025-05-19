@@ -54,7 +54,26 @@ For comprehensive deployment instructions, please see:
 
 ## Local Development
 
-To run the website locally:
+### Quick Local Setup
+
+For a simplified local setup with one-click launchers, check out the `local-deployment` branch:
+
+```bash
+git checkout local-deployment
+```
+
+Or download it directly: [Download local-deployment branch](https://github.com/Rishirajbal/unity/archive/refs/heads/local-deployment.zip)
+
+The `local-deployment` branch includes:
+- Simple Python scripts to run the website locally
+- One-click launchers for Windows and Mac/Linux
+- Detailed instructions for local deployment
+
+See [BRANCH_GUIDE.md](BRANCH_GUIDE.md) for more information about the different branches.
+
+### Standard Local Development
+
+To run the website locally from this branch:
 
 ```bash
 cd game-download-page
