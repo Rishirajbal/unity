@@ -1,6 +1,6 @@
 # Box Game Mobile App
 
-A professional, sleek, and modern mobile application version of the Box Game built with Flutter. This repository contains the complete source code for the mobile game.
+A professional, sleek, and modern mobile application version of the Box Game built with Flutter. This branch is specifically focused on the mobile app implementation.
 
 ## Repository Structure
 
@@ -10,6 +10,8 @@ A professional, sleek, and modern mobile application version of the Box Game bui
   - `android/` - Android-specific configuration
   - `ios/` - iOS-specific configuration
   - `pubspec.yaml` - Flutter dependencies and configuration
+- `INSTALLATION_GUIDE.md` - Detailed installation instructions
+- `BRANCH_INFO.md` - Information about all branches in this repository
 
 ## Game Features
 
@@ -26,7 +28,7 @@ A professional, sleek, and modern mobile application version of the Box Game bui
 - Tap right side of screen for right movement
 - Tap center of screen for stopping
 
-## Installation Instructions
+## Quick Installation Guide
 
 ### Prerequisites
 
@@ -38,7 +40,7 @@ A professional, sleek, and modern mobile application version of the Box Game bui
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Rishirajbal/unity.git
+   git clone -b mobile-app-new --single-branch https://github.com/Rishirajbal/unity.git
    cd unity
    ```
 
@@ -52,6 +54,8 @@ A professional, sleek, and modern mobile application version of the Box Game bui
    ```bash
    flutter run
    ```
+
+For more detailed installation instructions, please see [INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md).
 
 ### Building for Release
 
@@ -70,6 +74,24 @@ flutter build ios --release
 ```
 
 Then use Xcode to archive and distribute the app.
+
+## Other Branches
+
+This repository is organized into multiple branches, each serving a specific purpose:
+
+### 1. `main`
+- Focus: Vercel deployment of the game download page
+- Use when: You want to deploy the download page to Vercel
+
+### 2. `local-deployment`
+- Focus: Local deployment with one-click launchers
+- Use when: You want to run the download page locally without cloud deployment
+
+### 3. `mobile-app-new` (Current Branch)
+- Focus: Mobile app version of the Box Game built with Flutter
+- Use when: You want to build and deploy the mobile app version
+
+For more detailed information about the branches, see [BRANCH_INFO.md](BRANCH_INFO.md).
 
 ## Development
 
