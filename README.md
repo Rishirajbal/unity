@@ -1,15 +1,28 @@
-# Box Game Download Page
+# Box Game Download Page - Local Deployment
 
-A professional, sleek, and modern web page for downloading the Box Game. This repository contains both the game files and a professionally designed website for game distribution.
+A professional, sleek, and modern web page for downloading the Box Game. This branch is specifically designed for easy local deployment without requiring any external hosting services.
 
 ## Repository Structure
 
-- `game-download-page/` - Contains the complete website for downloading the game
+- `local-website/` - Contains the complete website with one-click launchers
 - `box game_full_zip.zip` - The original game files
-- `box-game-download-page.zip` - A packaged version of the download website
-- `.github/workflows/` - GitHub Actions workflow for automated Vercel deployment
-- `COMPLETE_DEPLOYMENT_GUIDE.md` - Comprehensive guide for deploying the website
-- `VERCEL_DEPLOYMENT.md` - Quick guide for Vercel deployment
+- `LOCAL_DEPLOYMENT_README.md` - Quick guide for local deployment
+- `LOCAL_DEPLOYMENT_GUIDE.md` - Comprehensive guide for local deployment
+- `BRANCH_INFO.md` - Information about all branches in this repository
+
+## Quick Start Guide
+
+1. **Navigate to the `local-website` folder**
+
+2. **Run the website**:
+   - **Windows**: Double-click `Launch_Website.bat`
+   - **Mac/Linux**: Open terminal, navigate to the folder, and run:
+     ```
+     chmod +x Launch_Website.sh
+     ./Launch_Website.sh
+     ```
+
+3. **Your default web browser will open automatically** with the Box Game download page
 
 ## Game Controls
 
@@ -24,44 +37,64 @@ A professional, sleek, and modern web page for downloading the Box Game. This re
 - Easy game download functionality
 - Game information and instructions
 - Animated UI elements for better user experience
+- One-click local deployment
 
-## Deployment Options
+## Local Deployment Options
 
-### GitHub Pages (Recommended)
+### One-Click Launchers (Recommended)
 
-This repository is configured to automatically deploy to GitHub Pages. Once enabled in your repository settings, the website will be available at:
-https://rishirajbal.github.io/unity/
+The simplest way to run the website locally is using the provided launcher scripts in the `local-website` folder:
 
-For detailed instructions, see:
-- [GITHUB_PAGES_DEPLOYMENT.md](GITHUB_PAGES_DEPLOYMENT.md) - GitHub Pages deployment guide
+- **Windows**: `Launch_Website.bat`
+- **Mac/Linux**: `Launch_Website.sh`
 
-### Deploy to Vercel
+### Manual Launch Options
 
-1. Go to [Vercel](https://vercel.com/) and sign up/login
-2. Import this GitHub repository
-3. Set the root directory to `game-download-page`
-4. Deploy!
+If the automatic launcher doesn't work, you have several alternatives:
 
-For manual Vercel deployment, see:
-- [MANUAL_VERCEL_DEPLOYMENT.md](MANUAL_VERCEL_DEPLOYMENT.md) - Step-by-step Vercel guide
-
-### Detailed Deployment Instructions
-
-For comprehensive deployment instructions, please see:
-- [COMPLETE_DEPLOYMENT_GUIDE.md](COMPLETE_DEPLOYMENT_GUIDE.md) - Comprehensive guide
-- [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) - Quick Vercel deployment guide
-- [game-download-page/DEPLOYMENT.md](game-download-page/DEPLOYMENT.md) - Technical deployment details
-
-## Local Development
-
-To run the website locally:
+#### Using Python Directly
 
 ```bash
-cd game-download-page
+# Navigate to the local-website folder
+cd path/to/local-website
+
+# Run the Python script
+python open_website.py
+```
+
+#### Using Python's Built-in HTTP Server
+
+```bash
+# Navigate to the local-website folder
+cd path/to/local-website
+
+# Start the server
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000` in your browser.
+Then open your web browser and go to: http://localhost:8000
+
+For more detailed instructions, please see:
+- [LOCAL_DEPLOYMENT_README.md](LOCAL_DEPLOYMENT_README.md) - Quick local deployment guide
+- [LOCAL_DEPLOYMENT_GUIDE.md](LOCAL_DEPLOYMENT_GUIDE.md) - Comprehensive local deployment guide
+
+## Other Branches
+
+This repository is organized into multiple branches, each serving a specific purpose:
+
+### 1. `main`
+- Focus: Vercel deployment of the game download page
+- Use when: You want to deploy the download page to Vercel
+
+### 2. `local-deployment` (Current Branch)
+- Focus: Local deployment with one-click launchers
+- Use when: You want to run the download page locally without cloud deployment
+
+### 3. `mobile-app-new`
+- Focus: Mobile app version of the Box Game built with Flutter
+- Use when: You want to build and deploy the mobile app version
+
+For more detailed information about the branches, see [BRANCH_INFO.md](BRANCH_INFO.md).
 
 ## Game Preview
 
