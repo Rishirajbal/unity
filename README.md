@@ -27,16 +27,27 @@ A professional, sleek, and modern web page for downloading the Box Game. This re
 
 ## Deployment Options
 
-### Quick Deploy to Vercel
+### GitHub Pages (Recommended)
+
+This repository is configured to automatically deploy to GitHub Pages. Once enabled in your repository settings, the website will be available at:
+https://rishirajbal.github.io/unity/
+
+For detailed instructions, see:
+- [GITHUB_PAGES_DEPLOYMENT.md](GITHUB_PAGES_DEPLOYMENT.md) - GitHub Pages deployment guide
+
+### Deploy to Vercel
 
 1. Go to [Vercel](https://vercel.com/) and sign up/login
 2. Import this GitHub repository
 3. Set the root directory to `game-download-page`
 4. Deploy!
 
+For manual Vercel deployment, see:
+- [MANUAL_VERCEL_DEPLOYMENT.md](MANUAL_VERCEL_DEPLOYMENT.md) - Step-by-step Vercel guide
+
 ### Detailed Deployment Instructions
 
-For detailed deployment instructions, please see:
+For comprehensive deployment instructions, please see:
 - [COMPLETE_DEPLOYMENT_GUIDE.md](COMPLETE_DEPLOYMENT_GUIDE.md) - Comprehensive guide
 - [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) - Quick Vercel deployment guide
 - [game-download-page/DEPLOYMENT.md](game-download-page/DEPLOYMENT.md) - Technical deployment details
