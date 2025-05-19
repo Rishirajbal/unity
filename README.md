@@ -1,15 +1,14 @@
-# Box Game Download Page
+# Box Game Download Page - Vercel Deployment
 
-A professional, sleek, and modern web page for downloading the Box Game. This repository contains both the game files and a professionally designed website for game distribution.
+A professional, sleek, and modern web page for downloading the Box Game. This branch is specifically optimized for deploying the game download page to Vercel.
 
 ## Repository Structure
 
 - `game-download-page/` - Contains the complete website for downloading the game
 - `box game_full_zip.zip` - The original game files
-- `box-game-download-page.zip` - A packaged version of the download website
-- `.github/workflows/` - GitHub Actions workflow for automated Vercel deployment
-- `COMPLETE_DEPLOYMENT_GUIDE.md` - Comprehensive guide for deploying the website
 - `VERCEL_DEPLOYMENT.md` - Quick guide for Vercel deployment
+- `VERCEL_DEPLOYMENT_GUIDE.md` - Comprehensive guide for Vercel deployment
+- `BRANCH_INFO.md` - Information about all branches in this repository
 
 ## Game Controls
 
@@ -24,54 +23,66 @@ A professional, sleek, and modern web page for downloading the Box Game. This re
 - Easy game download functionality
 - Game information and instructions
 - Animated UI elements for better user experience
+- Optimized for Vercel deployment
 
-## Deployment Options
+## Vercel Deployment
 
-### GitHub Pages (Recommended)
-
-This repository is configured to automatically deploy to GitHub Pages. Once enabled in your repository settings, the website will be available at:
-https://rishirajbal.github.io/unity/
-
-For detailed instructions, see:
-- [GITHUB_PAGES_DEPLOYMENT.md](GITHUB_PAGES_DEPLOYMENT.md) - GitHub Pages deployment guide
-
-### Deploy to Vercel
+### Quick Deployment Steps
 
 1. Go to [Vercel](https://vercel.com/) and sign up/login
 2. Import this GitHub repository
 3. Set the root directory to `game-download-page`
 4. Deploy!
 
-For manual Vercel deployment, see:
-- [MANUAL_VERCEL_DEPLOYMENT.md](MANUAL_VERCEL_DEPLOYMENT.md) - Step-by-step Vercel guide
-
 ### Detailed Deployment Instructions
 
 For comprehensive deployment instructions, please see:
-- [COMPLETE_DEPLOYMENT_GUIDE.md](COMPLETE_DEPLOYMENT_GUIDE.md) - Comprehensive guide
 - [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) - Quick Vercel deployment guide
+- [VERCEL_DEPLOYMENT_GUIDE.md](VERCEL_DEPLOYMENT_GUIDE.md) - Comprehensive Vercel guide
 - [game-download-page/DEPLOYMENT.md](game-download-page/DEPLOYMENT.md) - Technical deployment details
 
-## Local Development
+## Other Branches
 
-### Quick Local Setup
+This repository is organized into multiple branches, each serving a specific purpose:
 
-For a simplified local setup with one-click launchers, check out the `local-deployment` branch:
+### 1. `main` (Current Branch)
+- Focus: Vercel deployment of the game download page
+- Use when: You want to deploy the download page to Vercel
+
+### 2. `local-deployment`
+- Focus: Local deployment with one-click launchers
+- Use when: You want to run the download page locally without cloud deployment
+
+### 3. `mobile-app-new`
+- Focus: Mobile app version of the Box Game built with Flutter
+- Use when: You want to build and deploy the mobile app version
+
+## How to Clone Specific Branches
+
+### Clone All Branches
 
 ```bash
-git checkout local-deployment
+git clone https://github.com/Rishirajbal/unity.git
+cd unity
 ```
 
-Or download it directly: [Download local-deployment branch](https://github.com/Rishirajbal/unity/archive/refs/heads/local-deployment.zip)
+### Clone a Specific Branch Only
 
-The `local-deployment` branch includes:
-- Simple Python scripts to run the website locally
-- One-click launchers for Windows and Mac/Linux
-- Detailed instructions for local deployment
+```bash
+git clone -b BRANCH_NAME --single-branch https://github.com/Rishirajbal/unity.git
+```
 
-See [BRANCH_GUIDE.md](BRANCH_GUIDE.md) for more information about the different branches.
+Replace `BRANCH_NAME` with one of: `main`, `local-deployment`, or `mobile-app-new`.
 
-### Standard Local Development
+For example, to clone only the mobile app branch:
+
+```bash
+git clone -b mobile-app-new --single-branch https://github.com/Rishirajbal/unity.git
+```
+
+For more detailed information about the branches, see [BRANCH_INFO.md](BRANCH_INFO.md).
+
+## Local Development
 
 To run the website locally from this branch:
 
